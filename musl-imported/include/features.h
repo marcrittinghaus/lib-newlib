@@ -28,7 +28,7 @@
 #define __inline
 #endif
 
-#if __STDC_VERSION__ >= 201112L
+#if __STDC_VERSION__ >= 201112L || defined(__cplusplus)
 #elif defined(__GNUC__)
 #define _Noreturn __attribute__((__noreturn__))
 #else
